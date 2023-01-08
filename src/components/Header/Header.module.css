@@ -1,0 +1,96 @@
+.Header {
+  background-color: var(--clr-wb-100);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 0 4%;
+  z-index: 10;
+  box-shadow: 0 3px 6px 0 rgb(0 0 0 / 16%)
+}
+.HeaderListDiv{
+  display: flex;
+  justify-content: space-between;
+}
+.HeaderList {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.Search {
+  margin-left: 2rem;
+  cursor: pointer;
+}
+.NavHoverOpen {
+  position: absolute;
+  background-color: var(--clr-wb-100);
+  width: 100%;
+  visibility: hidden;
+  left: 0;
+  right: 0;
+  top: 5.2rem;
+  height: 70vh;
+  max-height: 0;
+  z-index: 20;
+  transition: all 0.3s ease-in-out;
+}
+.Navigation {
+  display: flex;
+  margin-top: 1em;
+  padding-bottom: 0.8em;
+}
+
+.Backdrop {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  right: 0;
+  top: 6.5rem;
+  height: 95vh;
+  z-index: 5;
+  overflow: hidden;
+  background-color: var(--background-blur);
+}
+.BarsBackdrop {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 100%;
+  z-index: 5;
+  overflow: hidden;
+  background-color: var(--background-blur);
+}
+.Bars {
+  display: none;
+  margin: 1rem 2rem;
+  cursor: pointer;
+}
+
+.BarsMenu {
+  position: fixed;
+  width: 28rem;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  z-index: 10;
+  overflow: hidden;
+  background-color: var(--clr-wb-100);
+  transition: all 0.3s ease-in-out;
+}
+@media only screen and (max-width: 62.5em) {
+  .Header {
+    padding: 0 2%;
+  }
+  .Search {
+    margin-right: 1rem;
+  }
+  .Bars {
+    display: block;
+    margin: 1rem 1rem;
+  }
+  .Navigation {
+    display: none;
+  }
+}

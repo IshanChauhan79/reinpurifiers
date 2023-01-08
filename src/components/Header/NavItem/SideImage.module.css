@@ -1,0 +1,12 @@
+.SideImage {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  width: 50%;
+}
+
+.SideImage img {
+  max-height: 400px;
+  max-width: 100%;
+  border-radius: 1rem;
+}

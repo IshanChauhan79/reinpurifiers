@@ -1,0 +1,79 @@
+.BarsMenu {
+  position: fixed;
+  width: 28rem;
+  right: 0;
+  top: 0;
+  height: 100%;
+  z-index: 10;
+  overflow: hidden;
+  background-color: var(--clr-wb-100);
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 2rem;
+}
+.Close {
+  display: inline-block;
+  margin-left: auto;
+  text-align: right;
+  margin-bottom: 2rem;
+  cursor: pointer;
+}
+.Menu {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  right: 0;
+  padding: 2rem 2rem;
+  background-color: var(--clr-wb-100);
+  /* cursor: pointer; */
+}
+.MenuType {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 0;
+  padding: 1rem 0;
+  font-size: 1.5rem;
+  height: 4rem;
+  overflow: hidden;
+  color: var(--clr-wb-700);
+  font-family: amiko-font;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+.MenuType:hover,
+.MenuType:active,
+.MenuType:focus {
+  color: var(--clr-wb-900);
+  font-family: amiko-bold;
+}
+.MenuType a {
+  color: var(--clr-wb-700);
+  font-family: amiko-font;
+  text-decoration: none;
+}
+.MenuType a:hover {
+  color: var(--clr-wb-900);
+  font-family: amiko-bold;
+}
+.Back {
+  top: -55px;
+  left: 0;
+  margin: 2rem 2rem;
+  position: absolute;
+  cursor: pointer;
+}
+.Title {
+  font-size: 2rem;
+  font-family: amiko-bold;
+}
+.Social {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  margin: 1rem;
+}
